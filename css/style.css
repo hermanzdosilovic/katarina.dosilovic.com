@@ -46,6 +46,11 @@ body {
     text-align: center;
 }
 
+.wrapper {
+    width: 90%;
+    margin: 10px auto;
+}
+
 .image {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 1s;
