@@ -1,174 +1,213 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"> 
-    <meta name="description" content="Galerija">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ivan Pavao Došilović">
+    <meta name="description" content="Galerija Slika">
     <meta name="keywords" content="katarina, dosilovic, katarina dosilovic">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Katarina Došilović</title>
+    <title>Katarina Došilović</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-	<img src="images/background.jpg" alt="background error can't find the picture" id="fullscreen">
-	<div class="header">
-		<p>email: k.dosilovic@gmail.com <br> tel: +385 91 1155 828 </p>
-		<h1>Katarina Došilović</h1>
-	</div>
 
-	<div class="container">
-        <div class="wrapper">
-            <div class="image">
-                <div class="about"></div>
-                <img src="images/akt.jpg" alt="Akt">
-                <div class="name">
-				    <h1>Akt</h1>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Katarina Došilović</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="background-image:'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg';background-size:cover;">
+        <div class="row">    
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail text-center" href="#" data-toggle="modal" data-target=".modal" title="Akt">
+                    <img class="img-responsive" src="images/akt.jpg" width="700px">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Crkva u Kerestincu">
+                    <img class="img-responsive" src="images/crkva-u-kerestincu.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Crkva u Svetoj Nedelji">
+                    <img class="img-responsive" src="images/crkva-u-svetoj-nedelji.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Cvijeće">
+                    <img class="img-responsive" src="images/cvijece.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Dvorac u Trakošćanu">
+                    <img class="img-responsive" src="images/dvorac-trakoscan.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Gdje Dunav ljubi nebo">
+                    <img class="img-responsive" src="images/gdje-dunav-ljubi-nebo.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Ilok">
+                    <img class="img-responsive" src="images/ilok.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Isus na Križu">
+                    <img class="img-responsive" src="images/isus-na-krizu.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Kameni Svatovi">
+                    <img class="img-responsive" src="images/kameni-svatovi.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Karitasova Kuća">
+                    <img class="img-responsive" src="images/karitasova-kuca.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Knin">
+                    <img class="img-responsive" src="images/knin.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Kurija Rakitje">
+                    <img class="img-responsive" src="images/kurija-rakitje.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="More">
+                    <img class="img-responsive" src="images/more.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Odlazak u Crkvu">
+                    <img class="img-responsive" src="images/odlazak-u-crkvu.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Pejsaž">
+                    <img class="img-responsive" src="images/pejsaz-2.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Pejsaž">
+                    <img class="img-responsive" src="images/pejsaz.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Pogled s Vinogradske Bolnice">
+                    <img class="img-responsive" src="images/pogled-s-vinogradske-bolnice.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Primorski Pejsaž">
+                    <img class="img-responsive" src="images/primorski-pejsaz.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Proljeće u Ivanić gradu">
+                    <img class="img-responsive" src="images/proljece-u-ivanic-gradu.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Ruža">
+                    <img class="img-responsive" src="images/ruza.jpg">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target=".modal" title="Zagreb Frankopanska Varšavska">
+                    <img class="img-responsive" src="images/zagreb-frankopanska-varsavska.jpg">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>Copyright &copy; 2017</p>
                 </div>
-		      </div>
-
-            <div class="image">
-                <div class="about"></div>
-                <img src="images/crkva-u-kerestincu.jpg" alt="Crkva u Kerestincu">
-                <div class="name">
-				    <h1>Crkva u Kerestincu</h1>
+                <div class="col-lg-4">
+                    <p>email: k.dosilovic@gmail.com</p>
+                    <p>mob: 091 1155 828</p>
+                    <p>Cijena na upit!</p>
                 </div>
             </div>
-
-            <div class="image">
-                <img src="images/crkva-u-svetoj-nedelji.jpg" alt="Crkva U Svetoj Nedelji">
-                <div class="name">
-				    <h1>Crkva u Svetoj Nedelji</h1>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="images/cvijece.jpg" alt="Cvijeće">
-                <div class="name">
-                    <h1>Cvijeće</h1>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="images/dvorac-trakoscan.jpg" alt="Dvorac Trakošćan">
-                <div class="name">
-                    <h1>Dvorac Trakošćan</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/gdje-dunav-ljubi-nebo.jpg" alt="Gdje Dunav Ljubi Nebo">
-                <div class="name">
-                    <h1>Gdje Dunav ljubi nebo</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/ilok.jpg" alt="Ilok">
-                <div class="name">
-                    <h1>Ilok</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/isus-na-krizu.jpg" alt="Isus na Križu">
-                <div class="name">
-                    <h1>Isus na Križu</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/kameni-svatovi.jpg" alt="Kameni Svatovi">
-                <div class="name">
-                    <h1>Kameni Svatovi</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/karitasova-kuca.jpg" alt="Karitasova Kuća">
-                <div class="name">
-                    <h1>Karitasova Kuća</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/knin.jpg" alt="Knin">
-                <div class="name">
-                    <h1>Knin</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/kurija-rakitje.jpg" alt="Kurija Rakitje">
-                <div class="name">
-                    <h1>Kurija Rakitje</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/more.jpg" alt="More">
-                <div class="name">
-                    <h1>More</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/odlazak-u-crkvu.jpg" alt="Odlazak U Crkvu">
-                <div class="name">
-                    <h1>Odlazak u Crkvu</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/pejsaz.jpg" alt="Pejsaž">
-                <div class="name">
-                    <h1>Pejzaž</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/pejsaz-2.jpg" alt="Pejsaž">
-                <div class="name">
-                    <h1>Pejzaž</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/pogled-s-vinogradske-bolnice.jpg" alt="Pogled s Vinogradske Bolnice">
-                <div class="name">
-                    <h1>Pogled s Vinogradske Bolnice</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/primorski-pejsaz.jpg" alt="Primorski Pejsaž">
-                <div class="name">
-                    <h1>Primorski Pejzaž</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/proljece-u-ivanic-gradu.jpg" alt="Proljeće u Ivanić Gradu">
-                <div class="name">
-                    <h1>Proljeće u Ivanić Gradu</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/ruza.jpg" alt="Ruža">
-                <div class="name">
-                    <h1>Ruža</h1>
-                </div>
-            </div>
-
-            <div class="image">
-            <img src="images/zagreb-frankopanska-varsavska.jpg" alt="Zagreb Frankopanska Varšavska">
-                <div class="name">
-                    <h1>Zagreb Frankopanska Varšavska</h1>
+        </footer>
+        <!-- Large modal -->
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h3 id="title" class="modal-title">
+                            <script>
+                                $("a[data-toggle='modal']").on('click', function(e) {
+                                    $_clickedElement = $(this); //Clicked Element
+                                    $_modal = $_clickedElement.attr('data-target'); //Modal
+                                    $($_modal).on('show.bs.modal',{ _clickedElement: $_clickedElement }, function (event) {
+                                        $('#title').text($_clickedElement.attr('title'));
+                                    });
+                                });
+                            </script>
+                        </h3>
+                    </div>
+                    <div id="body" class="modal-body">
+                        <img id="modalImage" src="" width="100%">
+                            <script>
+                                $("a[data-toggle='modal']").on('click', function(e) {
+                                    $_clObj = $(this); //Clicked Element
+                                    $_mdlObj = $_clObj.attr('data-target'); //Modal
+                                    
+                                    $($_mdlObj).on('show.bs.modal',{ _clObj: $_clObj }, function (event) {
+                                        $('#modalImage').attr("src", $_clObj.children("img").attr("src"));
+                                    });
+                                });
+                            </script>
+                    </div>
                 </div>
             </div>
         </div>
-	</div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
